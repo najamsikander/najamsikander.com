@@ -1,0 +1,149 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	font: 11px/1.6 Arial, sans-serif;
+	background: #bcd589 url(../Images/bg2.gif) top center no-repeat fixed;
+	color: #444;
+	overflow: -moz-scrollbars-vertical;
+}
+
+body, h1, h3, p {
+	padding: 0;
+	margin: 0;
+}
+
+a:link, a:visited {
+	color: #5275b4;
+	font-weight: bold;
+	outline: none;
+}
+
+a:hover, a:active {
+	color: #849cc9;
+}
+
+strong {
+	color: #e0542f;
+}
+
+em {
+	font-style: normal;
+	color: #769531;
+}
+
+#container {
+	background: url(../Images/container.png) top center repeat-y    !important;
+	background: url(../Images/container.gif) top center repeat-y; /*stoopid ie*/
+	width: 447px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%; /*stoopid ie*/
+}
+
+#header {
+	height: 91px; 
+	width: 447px;
+	margin-bottom: 0 !important;
+
+	background: url(../Images/header.png) top right no-repeat    !important;
+	background: url(../Images/header.gif) top right no-repeat; /*stoopid ie*/
+}
+
+#header h1 {
+	background: url(../Images/3kball.png) top left no-repeat    !important;
+	background: url(../Images/3kball.gif) top left no-repeat; /*stoopid ie*/
+	position: relative;
+	height: 62px;
+	width: 61px;
+	left: 358px;
+	top: 13px;
+	cursor: move;
+}
+
+#header h1 span, #footer span {
+	display: none;
+}
+
+#content, #ads {
+	width: 361px;
+	padding-left: 41px;
+}
+
+h3 {
+	padding: 4px 10px;
+	font-size: 10px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #222;
+	background: #98bc48;
+	cursor: pointer;
+}
+
+h4 {
+	margin: 0;
+	padding: 5px 10px 0;
+	font-size: 12px;
+	color: #333;
+	border-bottom: 1px solid #eee;
+}
+
+ol {
+	margin: 0;
+	padding: 0 10px 5px 35px;
+}
+
+h3 a:link, h3 a:visited {
+	font-weight: normal;
+	letter-spacing: 2px;
+	display: block;
+	text-decoration: none;
+	color: #222;
+}
+
+h3 a:hover, h3 a:active {
+	color: #222;
+}
+
+h3.news, h3.mootools {
+	background: #adc96d;
+}
+
+h3.gethelp, h3.prototype {
+	background: #c1d791;
+}
+
+p {
+	padding: 5px 10px;
+	color: #444;
+	background: #fff;
+}
+
+#footer a {
+	display: block;
+	height: 60px;
+	width: 355px;
+	background: url(../Images/footer.png) top right no-repeat;
+	margin-left: 45px;
+	padding-bottom: 30px;
+}
+
+#ads {
+	padding-bottom: 20px;
+}
+
+#ads h3 {
+	background-color: #eee;
+}
+
+#ads h3 a {
+	text-decoration: underline;
+	color: #5275b4;
+}
+
+div.ads {
+	width: 370px;
+	padding: 10px;
+}
