@@ -1,3 +1,0 @@
-ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAt2cmyuKAKRHKMc+k6nqnPG07pHfdCYj3pjTu3bSLdJRT0mS0oqZDQjWESQ+nVSUhiwDO0/L1vz4aAPardHEJ3ooaGR64pqcPPxJA2UbLb86pOxQku1h/X0P11ES1VOPIStgp7aqncjuKce2C8CY7fNYCFkoSPk9xYQeFnVJp0np/w06i1bTG/kukm9jdbN/QYgqhtY3Jm4bfO8Thaz/EefJUbokOWvQk2r2O+C2JV7fx+TG7dUSBojrEvEmJolCe84tOT9HtqCDM+YkMkpm1tTLg6O8UbbxwqcVC8u3ablbDvSD6Mh2yKlWkRj2ceSmJfzs0r3wAJCY7l3y879CP+w== dragona_eye@hotmail.com: -t rsa
-
-ssh-keygen -C dragona_eye@hotmail.com:
