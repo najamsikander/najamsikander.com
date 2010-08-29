@@ -9,13 +9,9 @@
 
 	<meta name="keywords" content="Najam Sikander, Najam, Freelancer, Web Developer, Engineer" />
 	<meta name="robots" content="all" />
-<title>Najam Sikander Awan</title>
-<!--
-
-
-    -->
-<style type="text/css" media="screen">
-		@import 'css/style_moo.css';
+	<title>Najam Sikander Awan</title>
+	<style type="text/css" media="screen">
+		@import 'css/template.css';
 	</style>
 </head>
 
@@ -44,7 +40,7 @@
 	</div>
 <!-- WhatsNew Accordin -->
 
-<h3 class="toggler gethelp"><a href="#Gethelp">Recent Projects</a></h3>
+<h3 class="toggler work"><a href="#work">Recent Projects</a></h3>
 <div class="accordion"><!-- GetHelp Accordin -->
 <p><a href="http://www.lals.com.pk/lals" target="_blank">www.lals.com.pk/lals</a></p>
 <p>Who loves chocolate ?? If you are addicted to chocolate and wish for many varriations of chocolate products look no further lals.com offers many falvours ranging from crunchy nuts to smooth pralines, using dark,milk and white chocolate.</p>
@@ -94,19 +90,23 @@
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript">
 	jQuery(function($){
-		//first .accordian hide
+	
+		var found = 0;
 		var $acc = $(".accordion");
-		$(".accordion:not(:first)").slideUp(0);
+		var hash = window.location.hash;
+		found = hash.length > 0 ? $(".toggler").index($(".toggler a[href="+hash+"]").parent()): 0;
 		
-		$(".toggler a").click(function(){
+		$(".accordion").hide().eq(found).show(); //be default shown div depending upon hash
+		
+		$(".toggler a").click(function(e){
 			var $div = $(this).parent().next();
 			
 			if($div.is(".accordion"))
 			{
-				$acc.not($div).slideUp(0);
-				$div.slideDown('slow');
+				$acc.not($div).slideUp(200);
+				$div.slideDown(1000);
 			}
-			return false;
+			//e.preventDefault();
 		});
 	}); //jquery ends
 </script>

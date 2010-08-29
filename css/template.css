@@ -1,158 +1,115 @@
-﻿/*
-Copyright (c) 2010, Yahoo! Inc. All rights reserved.
-Code licensed under the BSD License:
-http://developer.yahoo.com/yui/license.html
-version: 3.1.2
-build: 56
-*/
-/*
-	TODO will need to remove settings on HTML since we can't namespace it.
-	TODO with the prefix, should I group by selector or property for weight savings?
-*/
-html{
-	color:#000;
-	background:#FFF;
-}
-/*
-	TODO remove settings on BODY since we can't namespace it.
-*/
-/*
-	TODO test putting a class on HEAD.
-		- Fails on FF. 
-*/
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-code,
-form,
-fieldset,
-legend,
-input,
-textarea,
-p,
-blockquote,
-th,
-td {
-	margin:0;
-	padding:0;
-}
-table {
-	border-collapse:collapse;
-	border-spacing:0;
-}
-fieldset,
-img {
-	border:0;
-}
-/*
-	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
-*/
-address,
-caption,
-cite,
-code,
-dfn,
-em,
-strong,
-th,
-var {
-	font-style:normal;
-	font-weight:normal;
-}
-/*
-	TODO Figure out where this list-style rule is best set. Hedger has a request to investigate.
-*/
-li {
-	list-style:none;
+﻿html, body
+{
+height:100%;
 }
 
-caption,
-th {
-	text-align:left;
+body{
+font-family:Arial;
+	background:#bcd589 url(../Images/bg2.gif) no-repeat fixed top center;
+	color: #444;
+	overflow: -moz-scrollbars-vertical;
+	font-size: 62.5%;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-size:100%;
-	font-weight:normal;
-}
-q:before,
-q:after {
-	content:'';
-}
-abbr,
-acronym {
-	border:0;
-	font-variant:normal;
-}
-/* to preserve line-height and selector appearance */
-sup {
-	vertical-align:text-top;
-}
-sub {
-	vertical-align:text-bottom;
-}
-input,
-textarea,
-select {
-	font-family:inherit;
-	font-size:inherit;
-	font-weight:inherit;
-}
-/*to enable resizing for IE*/
-input,
-textarea,
-select {
-	*font-size:100%;
-}
-/*because legend doesn't inherit in IE */
-legend {
-	color:#000;
+h1, h2, h3,h4
+{
+font-size:10px;
 }
 
-h3,h4,div{
-	margin:0px; padding:0px;
+
+body, h1, h3, p
+{
+padding:0;
+margin:0;
+}
+a:link, a:visited {
+	color: #5275b4;
+	font-weight: bold;
+	border-bottom:1px thin #5275b4;
+	
 }
 
+a:hover {
+	color: #849cc9;
+	text-decoration:none;
+}
+a:active {
+color: #849cc9;
+text-decoration:underline;
+}
+
+strong {
+	color: #e0542f;
+}
+em
+{
+font-style: normal;
+color: #769531;
+}
 
 #container
 {
-width: 600px;
+background: url(../Images/container.png) top center repeat-y    !important;
+background: url(../Images/container.gif) top center repeat-y;
+width: 447px;
 margin: 0 auto;
-font-size:14px;
-line-height:28px;
+min-height: 100%;
+height: auto !important;
+height: 100%; /*stoopid ie*/
+line-height: 1.9em;
+font-size: 1.3em;
+}
+#header
+{
+background: url(../Images/header2.png) top right no-repeat;
+background: url(../Images/header2.gif) top right no-repeat    !important;
+height: 91px;
+width: 447px;
+margin-bottom: 0 !important;
+}
+#header h1
+{
+background: url(../Images/3kball.png) top left no-repeat    !important;
+background: url(../Images/3kball.gif) top left no-repeat;
+position: relative;
+height: 62px;
+width: 61px;
+left: 358px;
+top: 13px;
+cursor: move;
 
+}
+#header h1 span
+{
+display:none;
+}
+#content, #ads {
+	width: 361px;	/*361px, 354*/
+	padding-left: 41px; /* set to 45,41px */
 }
 h3
 {
-
+padding: 4px 10px;
 font: normal;
 text-transform: uppercase;
 color: #222;
 background: #98bc48;
 cursor: pointer;
+font-size:.9em;
 }
 h4
 {
+
+font-size:1em;
 color: #333;
 border-bottom: 1px solid #eee;
 margin: 0;
+padding: 5px 10px 0;
 font-weight:bold;
+}
+ol
+{
+margin:0;
+padding: 0 10px 5px 35px;
 }
 h3 a:link, h3 a:visited {
 font-weight: normal;
@@ -175,16 +132,64 @@ background: #adc96d;
 
 }
 
-h3.gethelp, h3.vcard {
+h3.work, h3.vcard {
 background: #c1d791;
 }
 
 p {
+	padding: 5px 10px;
 	color: #444;
 	background: #fff;
 }
 
 .accordion{
-	display:none; overflow:hidden; position:relative; width:100%;
+	width:320px;
+	overflow:hidden;
+}
+#footer a {
+	display: block;
+	height: 60px;
+	width: 361px;
+	background: #CCFF33 url(../Images/footer.png) top left no-repeat;
+	margin-left: 41px;
+	text-indent: -9999px;
+}
+#footer span {
+display: none;
+
+}
+#ads {
+	padding-bottom: 20px;
+}
+#ads h3 {
+	background-color: #eee;
+}
+#ads h3 a {
+	text-decoration: underline;
+	color: #5275b4;
+}
+div.ads {
+	width: 341px;
+	padding: 10px;
 }
 
+
+/*styling form*/
+form
+{
+margin:15px 0px;
+}
+form p
+{
+margin:0px 0px 5px 10px;
+padding:0px 0px;
+}
+label
+{
+
+color:#FF6600;
+}
+form textarea
+{
+overflow:hidden;
+}
