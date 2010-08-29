@@ -140,10 +140,11 @@ p {
 	padding: 5px 10px;
 	color: #444;
 	background: #fff;
+	margin-bottom:10px;
 }
 
 .accordion{
-	width:320px;
+	width:361px;
 	overflow:hidden;
 }
 #footer a {

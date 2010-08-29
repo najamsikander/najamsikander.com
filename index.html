@@ -27,9 +27,13 @@
 <h3 class="toggler introduction"><a href="#introduction">Introduction</a></h3>
 
 <div class="accordion"><!-- Introduction Accordin -->
-<p>I am a <strong>Web Developer</strong> in <strong>Karachi - Pakistan</strong>. I like <em>clean</em>, <em>appealing</em>, and <em>functional</em> websites which comply with latest web standards. Web world always attract me because of sharing of <em>ideas</em>, <em>techniques</em> it shares among diverse communities unlike standalone software which can't be showcased and attract people around the globe. Aim to build this site is demonstration of my skills in web development and implement the standards of <strong>XHTML</strong> and <strong>CSS</strong> which I am learning.</p>
+	
+	<p>I am a <strong>Web Developer</strong> from <strong>Karachi Pakistan</strong> and  I love developing <em>clean</em>, <em>appealing </em>and <em>functional</em> websites with industry standards.</p>
 
-<p>My tools of trade include <em>Photoshop</em>, <em>Dreamweaver</em> and <em>Flash</em> and for development process I used <em>Asp</em>, <em>Asp.net/C#</em> and <em>C#</em> with <em>Visual Studio 2005</em>.</p>
+
+	<p>Web media always attracted my attention. I am following the evolution of client/server technologies learning every day and 	becoming better every day in this profession.</p>
+
+	<p>During my professional life I have developed many web sites using <em>Asp.net/C#</em>, <em>xHtml/CSS</em>, <em>jQuery</em> and <em>wordpress</em>.</p>	
 </div>
 <!-- Introduction Accordin -->
 <h3 class="toggler news"><a href="#whatsnew">what's new</a></h3>
@@ -104,7 +108,7 @@
 			if($div.is(".accordion"))
 			{
 				$acc.not($div).slideUp(200);
-				$div.slideDown(1000);
+				$div.slideDown({duration:1000, easing:"easeOutBounce"});
 			}
 			//e.preventDefault();
 		});
