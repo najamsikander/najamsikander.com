@@ -173,8 +173,13 @@ div.ads {
 	width: 341px;
 	padding: 10px;
 }
-
-
+.social{
+	text-align:center;
+}
+.social a img{
+ border:none;
+ outline:none;
+}
 /*styling form*/
 form
 {
